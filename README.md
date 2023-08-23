@@ -60,6 +60,8 @@ python manage.py migrate
 python manage.py runserver
 python manage.py tailwind start
 
+```
+
 ## Contribution
 
 We welcome contributions from the community.To contribute, follow these steps:
