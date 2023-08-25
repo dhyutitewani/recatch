@@ -7,7 +7,7 @@ This project aims to create an interactive and user-friendly website for browsin
 ![image](https://github.com/virajsazzala/recatch/assets/113019331/60de2ef8-287f-46ca-bf05-01c137d0eeab)
 
 
-✤## Features
+## ✤ Features
 
 1. **Movie Catalog:** Browse through an extensive collection of movies with detailed information including title, genre, release year, and more.
 
@@ -22,7 +22,7 @@ This project aims to create an interactive and user-friendly website for browsin
 ![image](https://github.com/virajsazzala/recatch/assets/113019331/f8b95a3c-3ae9-447d-9b14-7a5596e8d597)
 
 
-✤## Technologies Used
+## ✤ Technologies Used
 ![image](https://github.com/virajsazzala/recatch/assets/113019331/4c8ec8ea-5154-46f4-98dc-4e1a94989314)
 
 #### Backend
@@ -44,7 +44,7 @@ Django for database management.
 
 
 
-✤## Getting Started
+## ✤ Getting Started
 
 ## Setup and Installation
 ```bash
@@ -75,7 +75,7 @@ python manage.py tailwind start
 ![image](https://github.com/virajsazzala/recatch/assets/113019331/6a37f7f7-23d5-4330-8518-f36cd1726751)
 
 
-✤## Contribution
+## ✤ Contribution
 
 We welcome contributions from the community.To contribute, follow these steps:
 
@@ -89,7 +89,7 @@ Fork the repository.
 ![image](https://github.com/virajsazzala/recatch/assets/113019331/ced3a88b-e616-46f9-84fa-a3f60fcefd0d)
 
 
-✤## License
+## ✤ License
 
 This project is licensed under the [MIT License](LICENSE).
 
