@@ -63,6 +63,22 @@ body {
   line-height: inherit;
   /* 2 */
 }
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+}
+.navbar-left, .navbar-right {
+  display: flex;
+  align-items: center;
+}
+.navbar-left a, .navbar-right a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
 
 /*
 1. Add the correct height in Firefox.
