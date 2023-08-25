@@ -134,5 +134,7 @@ STATIC_URL = 'theme/static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+
+
 LOGIN_REDIRECT_URL = 'movies-home'
 LOGIN_URL = 'users-login'

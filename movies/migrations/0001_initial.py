@@ -19,7 +19,8 @@ class Migration(migrations.Migration):
             name='post',
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('review', models.CharField(max_length=100)),
+                ('title', models.CharField(max_length=100)),
+                ('review', models.TextField()),
                 ('content', models.TextField()),
                 ('date_posted', models.DateTimeField(default=django.utils.timezone.now)),
                 ('author', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to=settings.AUTH_USER_MODEL)),

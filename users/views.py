@@ -4,18 +4,6 @@ from django.contrib.auth.decorators import login_required, user_passes_test
 from .forms import UserRegisterForm
 from movies.models import post
 
-posts = [
-    {
-        'author': 'abc',
-        'title': 'movie title',
-        'review': 'good/bad',
-        'content': 'movie content',
-        'date_posted': 'August 27, 2018'
-    }
-]
-
-# Create your views here.
-
 def register(request):
     if request.method == 'POST':
         form = UserRegisterForm(request.POST)
@@ -28,10 +16,9 @@ def register(request):
         form = UserRegisterForm()
     return render(request, 'users/register.html', {'form': form})
 
-@login_required 
-
+@login_required
 def profile(request):
     context = {
-        'posts': posts
+        'posts': post.objects.all()
     }
     return render(request, 'users/profile.html', context)
