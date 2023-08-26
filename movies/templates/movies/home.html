@@ -1,5 +1,9 @@
 {% extends 'base.html' %}
 {% block content %}
     <h1 class="text-gray-700 text-3xl text-center p-5 underline">Home</h1>
-    <a href="{% url 'movies-movie' %}">Movie</a>
+    {% for movie in movies %}
+        <div class="movie">
+            <a href="{% url 'movies-movie' movie.id %}">{{ movie.title }}</a>
+        </div>
+    {% endfor %}
 {% endblock %}
