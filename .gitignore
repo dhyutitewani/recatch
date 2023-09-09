@@ -1,32 +1,4 @@
-# Ignore virtual environment files
-venv/
-pipenv/
-*.pyc
-
-# Ignore Django migrations and database file
-__pycache__/
-db.sqlite3
-/migrations/
-
-# Ignore secret settings and sensitive information
-.env
-*.secret_key
-
-# Ignore log files and other generated files
-*.log
-*.swp
-*.swo
-.vscode/
-__pycache__/
-*.db
-*.sqlite3-journal
-
-# Ignore local development settings
-local_settings.py
-
-# Ignore node_modules
-node_modules/
-
-# Ignore IDE files and directories
-.idea/
-.vscode/
+*.pkl
+.ipynb_checkpoints/
+datasets/
+model/
