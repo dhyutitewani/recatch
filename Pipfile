@@ -4,9 +4,9 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-django = "*"
-django-tailwind = "*"
-django-browser-reload = "*"
+streamlit = "*"
+requests = "*"
+pandas = "==2"
 
 [dev-packages]
 
