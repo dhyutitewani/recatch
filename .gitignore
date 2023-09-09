@@ -1,4 +1,5 @@
 *.pkl
+*.md
 .ipynb_checkpoints/
 datasets/
 model/

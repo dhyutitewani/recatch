@@ -1,6 +1,4 @@
 # RECATCH
-![image](https://github.com/virajsazzala/recatch/assets/113019331/03549c38-1fed-42cd-b459-0cd4a2aba528)
-
 A simple movie recommendation web app powered by a movie recommendation model using cosine similarity.
 
 Introduction
