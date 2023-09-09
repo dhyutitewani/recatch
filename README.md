@@ -1,60 +1,61 @@
-Certainly! Your `app.py` code appears to be a simple Movie Recommender System using Streamlit and cosine similarity. I'll provide some documentation for your code:
+# RECATCH
+![image](https://github.com/virajsazzala/recatch/assets/113019331/03549c38-1fed-42cd-b459-0cd4a2aba528)
 
-### Movie Recommender System Documentation
+A simple movie recommendation web app powered by a movie recommendation model using cosine similarity.
 
-**1. Introduction:**
-   - This is a Movie Recommender System built using Python and Streamlit, which helps users discover movies based on their preferences.
+Introduction
+------------
+Recatch Movie Recommender is a web application that provides movie recommendations based on user-selected movies. The recommendations are generated using a cosine similarity model that calculates similarity scores between movies in the dataset.
 
-**2. Dependencies:**
-   - The following Python libraries and modules are required:
-     - `pickle`: For reading pickled data containing movie information and similarity scores.
-     - `streamlit`: To create the web-based user interface.
-     - `requests`: For making HTTP requests to fetch movie data from a third-party API.
-     - `pandas`: For data manipulation and displaying movie recommendations.
-     - `sklearn.feature_extraction.text.CountVectorizer`: For text vectorization.
+Features
+--------
+- Search for a movie from a predefined movie list.
+- Get recommendations for similar movies.
+- View movie posters and titles for the recommended movies.
 
-**3. Data Sources:**
-   - The movie data is stored as pickled files (`movie_list.pkl` and `similarity.pkl`), which are loaded into the system.
-   - Movie poster images and additional information are fetched from "The Movie Database" (TMDb) API.
+Usage
+-----
+1. Clone the repository:
 
-**4. Functions:**
+   ```git clone https://github.com/virajsazzala/recatch.git```
 
-   - `fetch_poster(movie_id)`: This function takes a `movie_id` as input, fetches the movie's poster image URL from TMDb, and returns the full image URL.
+2. Generate the required files by running the ipynb file and put them in a ```model/``` directory
 
-   - `recommend(movie)`: Given a selected `movie`, this function finds similar movies based on cosine similarity.
-     - It calculates cosine similarity scores for all movies in the dataset.
-     - Sorts movies based on their similarity scores in descending order.
-     - Returns the names and poster URLs of the top 5 recommended movies.
+3. Install the required dependencies:
 
-**5. Streamlit UI:**
-   - The Streamlit web application consists of the following components:
-     - A header displaying "Movie Recommender System."
-     - A dropdown select box to choose a movie from the available options.
-     - A button labeled "Show Recommendation" to trigger the recommendation process.
-     - Five columns to display the recommended movies' names and poster images.
+   ```pip install -r requirements.txt```
 
-**6. Movie Selection and Recommendation:**
-   - Users select a movie from the dropdown menu.
-   - When the "Show Recommendation" button is clicked, the system retrieves and displays the top 5 movie recommendations along with their poster images.
+4. Run the Streamlit app:
 
-**7. Recommendation Display:**
-   - The recommendations are displayed in five columns, each containing the movie's name and poster image.
+   ```streamlit run app.py```
 
-**8. Recommendation Algorithm:**
-   - The system uses cosine similarity to find similar movies. It creates a matrix of movie descriptions and calculates the cosine similarity scores between them.
+5. Open the web browser and go to the provided local URL (usually http://localhost:8501) to access the Recatch Movie Recommender.
 
-**9. Poster Retrieval:**
-   - The poster images of recommended movies are fetched from TMDb using their movie IDs.
+How it Works
+------------
+1. The movie dataset is loaded into the application from a pickle file.
+2. User selects a movie from the available list.
+3. Upon clicking the "Recommend" button, the application uses a cosine similarity model to find similar movies to the selected one.
+4. The top 5 recommended movies are displayed along with their titles and posters.
 
-**10. How to Run:**
-    - Make sure you have the required libraries installed (e.g., `streamlit`, `requests`, `pandas`).
-    - Run the Streamlit app with the command `streamlit run app.py` in your terminal.
+Data Source
+-----------
+The movie dataset used in this project comes from The Movie Database (TMDb) API. Movie posters and information are fetched from TMDb for display.
 
-**11. Acknowledgments:**
-    - The movie data and similarity scores are precomputed and loaded from pickled files.
-    - The poster images and additional movie details are retrieved from TMDb.
+Credits
+-------
+- Data Source: The Movie Database (TMDb) API
+- Streamlit: [https://streamlit.io/](https://streamlit.io/)
+- Python Libraries: pandas, requests, pickle
 
-**12. Future Improvements:**
-    - You can further enhance this recommender system by incorporating user feedback and ratings to provide personalized recommendations.
+Author
+------
+- Viraj Reddy - https://github.com/virajsazzala
+- Dhyuti Amit Tewani - https://github.com/Dhyuti
 
-This documentation should help users understand how your Movie Recommender System works and how to interact with it using the Streamlit interface.
+
+Acknowledgments
+---------------
+- Special thanks to the developers of Streamlit and the TMDb API for providing the tools and data used in this project.
+
+Feel free to contribute or report issues on GitHub.
