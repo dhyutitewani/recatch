@@ -49,7 +49,7 @@ Credits
 Author
 ------
 - Viraj Reddy - https://github.com/virajsazzala
-- Dhyuti Amit Tewani - https://github.com/Dhyuti
+- Dhyuti Amit Tewani - https://github.com/dhyutitewani
 
 
 Acknowledgments
